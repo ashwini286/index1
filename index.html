@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first_web_page</title>
+    <style>
+        body{
+            background-color:#4d4d5e58;
+            /* position: fixed; */
+        }
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        #hero {
+            /* border: 3px solid red; */
+            height: 8vh;
+            box-shadow: 0px 0px 5px black;
+            background-color: #E0E0E0;
+            /* https://assets6.lottiefiles.com/packages/lf20_7i9etvbd.json */
+            /* border-radius: 15px; */
+        }
+
+        #menu {
+            padding-right: 45px;
+            padding-top: 10px;
+            /* border: 3px solid red; */
+        }
+
+        #menu ul {
+            /* border: 3px solid yellow; */
+            display: flex;
+            list-style: none;
+            justify-content: flex-end;
+            box-shadow: 0px 0px 5px black;
+        }
+
+        #menu ul li {
+            /* border: 3px solid green; */
+        }
+
+        #menu ul li a {
+            /* border: 2px solid #808080; */
+            color: #116767d4;
+            text-decoration: none;
+            display: block;
+            width: 145px;
+            text-align: center;
+            padding: 3px 5px;
+            height: 35px;
+            font-size: 23px;
+            border: 2px solid rgba(189, 174, 174, 0);
+            border-width: 0px 0px 3px 0px;
+            border-radius: 7px;
+            /* box-shadow: 0px 0px 5px black; */
+
+        }
+
+        #menu ul li a:hover {
+            /* background-color: #808080; */
+            border: 2px solid rgb(189, 174, 174);
+            border-width: 0px 0px 3px 0px;
+            color: white;
+        }
+
+        #menu ul li ul {
+            display: none;
+            background-color: #E0E0E0;
+        }
+
+        #menu ul li:hover ul {
+            display: block;
+            position: absolute;
+
+
+        }
+
+        #hero2 {
+            /* border: 3px solid red; */
+            margin: 30px;
+            /* width: 90vw; */
+            height: 70vh;
+            /* background-color: #E0E0E0; */
+            background-image: url("/images/hero2.avif");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: 0px 0px 5px black;
+            border-radius: 15px;
+
+
+        }
+
+        #loffin {
+            box-shadow: 0px 0px 5px black;
+            border-radius: 15px;
+            margin: 30px;
+            height: 80vh;
+            display: flex;
+            background-color: #E0E0E0;
+        }
+
+        #animation {
+            /* border: 3px solid blue; */
+            box-shadow: 0px 0px 5px black;
+            margin: 10vh;
+            height: 60vh;
+            width: 70vh;
+            border-radius: 15px;
+
+        }
+
+        #write {
+            /* border: 3px solid rgba(175, 6, 34, 0.184); */
+            /* box-shadow: 0px 0px 2px black; */
+            height: 60vh;
+            width: 70vh;
+            margin: 10vh;
+
+        }
+        #write h1{
+            display: flex;
+            justify-content: center;
+            color: #116767d4;
+            padding: 10px;
+            /* border: 2px solid red; */
+            /* text-decoration: underline; */
+
+
+        }
+        #write h1:hover{
+            text-decoration: underline;
+            cursor: pointer;
+            color:  rgba(82, 71, 71, 0.544);
+           
+
+        }
+        #write p {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            line-height: 25px;
+            font-size: 20px;
+            color:#116767d4;
+        }
+        #write p:hover{
+            color: rgba(82, 71, 71, 0.544);
+            cursor: pointer;
+        }
+        #location{
+
+        }
+        #menu ul #logo {
+            padding: -35px;
+            margin: -15px;
+        }
+        #location{
+            /* border: 3px solid red; */
+            margin: 30px;
+            height: 70vh;
+            /* display: flex;
+            justify-content: center ; */
+            border-radius: 10px;       
+         }
+    </style>
+
+</head>
+
+<body>
+    <div id="hero">
+        <div id="menu">
+            <ul style="box-shadow: none;">
+                <div id="logo"> <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_7i9etvbd.json" background="transparent"  speed="1"  style=" width: 100vh; height:8vh; font-size: 20%;" loop autoplay></lottie-player></div>
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">Products</a>
+                    <ul>
+                        <li> <a href="#">Cloth</a></li>
+                        <li> <a href="#">Jalwary</a></li>
+                        <li> <a href="#">boot</a></li>
+                        <li> <a href="#">Electronic</a></li>
+                        <li> <a href="#">Decorection</a></li>
+                    </ul>
+
+                </li>
+                <li> <a href="#">Services</a> </li>
+                <li> <a href="#">AboutUs</a> </li>
+                <li> <a href="#">ContactUs</a> </li>
+            </ul>
+        </div>
+    </div>
+    <div id="hero2">
+
+    </div>
+    <div id="loffin">
+        <div id="animation">
+            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_0yfsb3a1.json" background="transparent"  speed="1"  style="width: 70vh; height: 60vh; padding-left: 35px;" loop autoplay></lottie-player>
+        </div>
+        <div id="write">
+            <h1>Coding</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, molestiae, tempora impedit adipisci sequi, tenetur iste accusamus eaque consectetur nulla rem sapiente! Quaerat itaque aliquid incidunt odit delectus, omnis quos, quod, aliquam minima ex exercitationem magni magnam odio saepe impedit neque praesentium optio assumenda officiis. Perspiciatis, ratione. Labore, enim hic.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, molestiae, tempora impedit adipisci sequi, tenetur iste accusamus eaque consectetur nulla rem sapiente! Quaerat itaque aliquid incidunt odit delectus, omnis quos, quod, aliquam minima ex exercitationem magni magnam odio saepe impedit neque praesentium optio assumenda officiis. Perspiciatis, ratione. Labore, enim hic.
+            </p>
+        </div>
+    </div>
+    <div id="location">
+        <iframe 
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14504.067474283422!2d84.57071538031764!3d24.657547696398744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398ce7a40f4369db%3A0x13f66d1f1de72fbb!2sMadanpur%2C%20Bihar%20824208!5e0!3m2!1sen!2sin!4v1680950627834!5m2!1sen!2sin" width="100%" height="450" style="border:0;  border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratices set with jq</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+
+
+    <!-- <body>
+
+    <p class="c1">Hello i am ashwini</p>
+    <p>Hello i am ashwini</p>
+    <button class="c1">show</button>
+
+    <p>This is a paragraph with little content.</p>
+
+<script>
+    $(document).ready(function(){
+        // set only one property
+        $(".c1,.c2").css("color","red");
+        // multipal css proparty add karne ke liye
+        $(".c1,.c2").css({"background-color":"red","color":"yellow"})
+
+    })
+</script>
+
+
+</body> -->
+    <style>
+        #home {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+
+<body>
+
+    <!-- <p>Rahul</p>
+    <h1>Ashwini</h1>
+    <p>ravi</p>
+        <div>
+            <p>suresh</p>
+            <h1>rajkapur</h1>
+        </div> -->
+    <!-- <div>
+            <h1>A2</h1>
+            <p>vijay</p>
+        </div> -->
+    <!-- <p>one</p>
+    <p>two</p>
+    <p>three</p>
+    <p>four</p>
+    <p>five</p>
+    <p>six</p>
+         <div>
+            <p>A</p>
+            <p>B</p>
+            <p>c</p>
+            <p>d</p>
+         </div> -->
+    <div id="home">
+
+    </div>
+    <script>
+        // $(document).ready(function(){
+        //     $("div p").css("background-color","yellow")
+        // })
+
+        // $(document).ready(function () {
+        //     $("#home").mouseover(function () {
+        //         $(this).css("background-color", "blue")
+        //     })
+
+        //     $("#home").mouseleave(function () {
+        //         $(this).css("background-color", "red")
+        //     })
+        // })
+        $(document).ready(function(){
+            $("#home").click(function(){
+                let r = Math.floor(Math.random()*255)
+                let g = Math.floor(Math.random()*255)
+                let b = Math.floor(Math.random()*255)
+                let x = "rgb("+r+','+g+','+b+")"
+                $(this).css("background-color",x)
+            })
+
+
+
+
+
+
+
+        })
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
